@@ -61,8 +61,42 @@ footer{
 }
 
 @media(max-width: 480px){
+  nav{
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    line-height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 4px solid black;
+    background: black;
+    z-index: 1000;
+    color: white;
+  }
+  nav a{
+    color: white;
+  }
+
+  .wrapper {
+    margin-top: 500px;
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+    line-height: 150%;
+  }
+
   .books{
     grid-template-columns: auto auto;
     gap: 16px;
+  }
+
+  .books figcaption {
+    font-size: smaller;
   }
 }
