@@ -1,0 +1,5 @@
+I'd like to create a website that seems innocuous at first, but the further you go the more disturbing it gets. I mean disturbing in the sense that it makes the user feel watched and vulnerable.
+
+I was thinking a sort of Netflix/YouTube-like website. You get a home page, and as you click through the categories and scroll through the videos, maybe some of them slowly fade away and only specific ones remain which entices the user to click on them and it plays a disturbing video instead. Maybe to watch a video, you need to "subscribe" using your CC information (don't worry, not your actual info. I was thinking by clicking on the fields, it creates fake numbers) and it could say "thanks for your information" instead of thanking for paying, something like that.
+
+Anyway, the concept is just to have a sort of website that many people use daily, but the data collection such as CC info, category preferences, enabling cookies(which you wont be able to refuse), and some more stuff that I'll need to think through.
