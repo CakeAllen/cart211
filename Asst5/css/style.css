@@ -39,7 +39,7 @@ nav a:hover{
   color: gray;
 }
 
-.hamburger-menu button .fa-bars {
+.hamburger-menu button .fa-bars{
   cursor: pointer;
   font-size: 2.5em;
 }
