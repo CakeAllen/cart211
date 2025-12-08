@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everblack | YouFlix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="YouFlix logo" width="100px" height="50px"></a>
+        </div>
+
+        <div class="menu1">
+            <button class="close-menu">
+                &times;
+            </button>
+            <a href="categories.html">Categories</a>
+            <a href="bookmarks.html">Bookmarks</a>
+            <a href="account.html">Account</a>
+        </div>
+
+        <div class="hamburger-menu">
+            <button>
+                <span class="fa-bars"></span>
+            </button>
+        </div>
+        
+    </nav>
+        <header>
+            <h2>Everblack</h2>
+        </header>
+
+        <main>
+            <div class="movies">
+                <img src="assets/movie3box.jpg" alt="everblack">
+                <h3 style="color: white;">
+                    Length: 2h 38m 04s
+                </h3>
+                <h2>
+                    Synopsis:
+                </h2>
+                <p class="synopsis">
+                    A man from a secluded town goes on a journey and meets another on the same path. After deciding to team up, they form a great duo as they carry out jobs
+                    on the way to the country's capital. After acquiring a strange item, the duo start to experience strange happenings. One continues the path as normal
+                    and the other starts acting strangely. At the journey's end, the duo meet an incredibly unfortunate fate.
+                </p>
+                <p class="account" style="color: red; font-size: larger;">
+                    CLICK <a href="subscribe.html">HERE</a> TO SUBSCRIBE TO YouFlix PRO NOW!
+                </p>
+            </div>
+        </main>
+
+        <Footer>
+        <h4>YouFlix collects your cookies to tailor the website to you!</h4>
+        <small>© Daniel Michurov, cart 211, fall 2025, Final Project</small>
+        </Footer>
+    </div>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+</body>
+</html>

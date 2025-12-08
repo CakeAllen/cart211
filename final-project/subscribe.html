@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouFlix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <header style="text-align: center;">
+            <h1 style="text-align: center;">Decided to subscribe?</h1>
+            <h2>Good choice! :)</h2>
+            <h2>Choose the subscription tier:</h2>
+        </header>
+
+        <main>
+            <div class="subscription">
+                <p>
+                    <a>FREE TIER</a> <br>
+                    BAD! <br>
+                    Limited Access to YouFlix
+                </p>
+                <p>
+                    <a href="ad.html">BEGINNER TIER</a> <br>
+                    9.99/month <br>
+                    Limited Access to YouFlix 
+                </p>
+                <p>
+                    <a href="ad.html">INTERMEDIATE TIER</a> <br>
+                    19.99/month <br>
+                    Limited Access to YouFlix
+                </p>
+                <p class="protier">
+                    <a href="ad.html">PRO TIER</a> <br>
+                    29.99/month <br>
+                    Unlimited Access to YouFlix! <br>
+                    BEST VALUE!!!!
+                </p>
+            </div>
+        </main>
+
+        <Footer>
+        <h4>YouFlix collects your cookies to tailor the website to you!</h4>
+        <small>© Daniel Michurov, cart 211, fall 2025, Final Project</small>
+        </Footer>
+    </div>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouFlix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="assets/logo.png" alt="YouFlix logo" width="100px" height="50px"></a>
+        </div>
+
+        <div class="menu1">
+            <button class="close-menu">
+                &times;
+            </button>
+            <a href="categories.html">Categories</a>
+            <a href="bookmarks.html">Bookmarks</a>
+            <a href="account.html">Account</a>
+        </div>
+
+        <div class="hamburger-menu">
+            <button>
+                <span class="fa-bars"></span>
+            </button>
+        </div>
+        
+    </nav>
+        <header>
+            <h1>Categories</h1>
+            <h2>Explore these great movies by categories!</h2>
+            <h3>More movies to be added soon!</h3>
+        </header>
+
+        <main class="categories">
+            <div>
+                <h2>Action:</h2>
+                <figure>
+                    <a href="movie1.html"><img src="assets/movie1.jpg"></a>
+                    <div class="hover-text">2:03:54</div>
+                    <figcaption class="movieTitle">The Adventures of Axe Man</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h2>Comedy:</h2>
+                <figure>
+                    <a href="movie2.html"><img src="assets/movie2.png"></a>
+                    <div class="hover-text">1:35:40</div>
+                    <figcaption class="movieTitle">He Was Where...!?</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h2>Fantasy:</h2>
+                <figure>
+                    <a href="movie3.html"><img src="assets/movie3.png"></a>
+                    <div class="hover-text">2:38:04</div>
+                    <figcaption class="movieTitle">Everblack</figcaption>
+                </figure>
+            </div>
+
+            <div>
+                <h2>Horror:</h2>
+                <figure>
+                    <a href="movie4.html"><img src="assets/movie4.png"></a>
+                    <div class="hover-text">0:54:14</div>
+                    <figcaption class="movieTitle">Project Fourteen</figcaption>
+                </figure>
+            </div>
+        </main>
+
+        <Footer>
+        <h4>YouFlix collects your cookies to tailor the website to you!</h4>
+        <small>© Daniel Michurov, cart 211, fall 2025, Final Project</small>
+        </Footer>
+    </div>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+</body>
+</html>
